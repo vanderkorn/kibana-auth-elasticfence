@@ -25,7 +25,6 @@ module.exports = function (server) {
           + '<link rel="stylesheet" href="/bundles/kibana.style.css">'
           + '</head><body>'
           + '<center><div class="container" style="width: 20%;margin-left: auto;margin-right:auto;margin-top: 10%;">'
-          + '<h1><img width="60%" ng-src="/plugins/kibana/settings/sections/about/barcode.svg" src="/plugins/kibana/settings/sections/about/barcode.svg"></h1>'
           + (message ? '<h3>' + message + '</h3><br/>' : '')
           + '<form id="login-form" class="ng-valid ng-dirty ng-valid-parse" method="get" action="/login">'
           + '<div class="form-group inner-addon left-addon">'
