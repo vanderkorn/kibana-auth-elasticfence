@@ -23,15 +23,15 @@ module.exports = function (server) {
       return reply('<!DOCTYPE html><html><head><title>Login Required</title>'
           + '<link rel="stylesheet" href="/bundles/commons.style.css">'
           + '<link rel="stylesheet" href="/bundles/kibana.style.css">'
-          + '</head><body>'
+          + '</head><body style="background: #222222;">'
           + '<center><div class="container" style="width: 20%;margin-left: auto;margin-right:auto;margin-top: 10%;">'
-          + (message ? '<h3>' + message + '</h3><br/>' : '')
+          + (message ? '<h3 style="color:white;">' + message + '</h3><br/>' : '')
           + '<form id="login-form" class="ng-valid ng-dirty ng-valid-parse" method="get" action="/login">'
           + '<div class="form-group inner-addon left-addon">'
           + '  <input type="text" style="margin-bottom:8px;font-size: 1.25em;height: auto;" name="username" placeholder="Username" class="form-control ng-valid ng-touched ng-dirty">'
           + '  <input type="password" style="font-size: 1.25em;height: auto;" name="password" placeholder="Password" class="form-control ng-valid ng-touched ng-dirty">'
           + '</div><div style="width:200px;margin-left:auto;margin-right:auto;">'
-          + '<input type="submit" value="Login" class="btn btn-default login" style="width: 80%;font-size: 1.5em;">' 
+          + '<input type="submit" value="Login" class="btn btn-default login" style="width: 80%;font-size: 1.5em;background-color: #94c63d;">'
           + '</div></form></div></center></body></html>');
     }
 
